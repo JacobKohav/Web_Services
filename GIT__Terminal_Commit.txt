@@ -1,0 +1,1 @@
+1. Git init2. Git add .3. Git commit -m ÒCommit MessageÓ4. Git remote add origin "Github_url"5. Git push origin master

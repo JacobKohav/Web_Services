@@ -1,0 +1,135 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Add New Article</title>
+        <h1>Add New Article</h1>
+        <br>
+      </head>
+      <body>
+        <form>
+          <div class="form-group">
+            <h3>Article Title</h3>
+            <!-- <label for="exampleInputEmail1">Article Title</label> -->
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group">
+              <h3>Author Name</h3>
+            <!-- <label for="exampleInputPassword1">Author Name</label> -->
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Author">
+          </div>
+
+      <div class="form-row">
+    <div class="col">
+      <div class="container mt-3">
+<h3>Upload Files</h3>
+<!-- <p>To create a custom file upload, wrap a container element with a class of .custom-file around the input with type="file". Then add the .custom-file-input to the file input:</p> -->
+<form action="/action_page.php">
+
+  <!-- <p>Default file:</p> -->
+  <input type="file" id="myFile" name="filename2">
+
+    </form>
+  </div>
+    </div>
+
+    <div class="col">
+        <h3>Pages</h3>
+        <div class="dropdown">
+         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+           Select Page
+         </button>
+         <div class="dropdown-menu">
+           <a class="dropdown-item" href="#">Academics</a>
+           <a class="dropdown-item" href="#">Other</a>
+           <a class="dropdown-item" href="#">Other</a>
+         </div>
+       </div>
+    </div>
+  </div>
+
+    <h3>Article Text</h3>
+    <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Author"> -->
+    <div class="form-group">
+     <textarea class="form-control" rows="5" id="comment"></textarea>
+   </div>
+
+    <div class="form-row">
+    <div class="col">
+    <div class="container mt-3">
+    <h3>Select Tags</h3>
+    <!-- <p>To create a custom file upload, wrap a container element with a class of .custom-file around the input with type="file". Then add the .custom-file-input to the file input:</p> -->
+
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Python</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">C++</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Java</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Scala</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Pearl</label>
+</div>
+    </div>
+    </div>
+
+    <div class="col">
+        <h3>Visibility</h3>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Private
+        </label>
+      </div>
+    </div>
+    </div>
+
+<br>
+  <h3>Log In to Finish Submitting</h3>
+    <div class="form-row">
+  <div class="col">
+    <div class="container mt-3">
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+</div>
+  </div>
+<!-- <br> -->
+  <div class="col">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
+  </div>
+</div>
+
+<br>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+<label class="form-check-label" for="inlineCheckbox1">Remember Me</label>
+</div>
+
+<br>
+<button type="button" class="btn btn-primary">Submit</button>
+          </form>
+        </body>
+        </html>
